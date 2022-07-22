@@ -2,12 +2,12 @@
 lab:
   title: Лабораторная работа 3. Создание приложения на основе модели
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: c69ca883cc8f8c8b00ed3f67fb18f93b035726e3
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458378"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125765"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Модуль 3. Начало работы с Power Apps
 ## <a name="lab-how-to-build-a-model-driven-app"></a>Практическое занятие. Создание приложения на основе модели
@@ -234,7 +234,7 @@ Bellows College — образовательное учреждение, име
 
 2. Создайте новый контакт.
 
-    0. Приложение должно открыться в представлении **Мои активные контакты**. Если это не так, нажмите слева на элемент "Визиты".
+    0. Приложение должно открыться в представлении **Мои активные контакты**. Если это не так, нажмите слева "Контакты".
 
     1. Выберите пункт **Создать** в верхнем меню.
 
