@@ -2,18 +2,13 @@
 lab:
   title: Лабораторная работа 3. Создание приложения на основе модели
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154423"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Лабораторная работа 3. Создание приложения на основе модели
 
 ## <a name="scenario"></a>Сценарий
 
-Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий. Сейчас для регистрации посетителей кампуса используются бумажные журналы. Информация собирается несогласованно, отсутствуют средства сбора и анализа данных о визитах по всему кампусу.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Администрация кампуса хотела бы модернизировать систему регистрации посетителей таким образом, чтобы допуск в здания контролировали сотрудники службы безопасности, а обитатели кампуса предварительно регистрировали все визиты и обязательно записывали их.
 
@@ -66,7 +61,7 @@ Bellows College — образовательное учреждение, име
 
 4. В разделе **Возможности данных** выберите элемент **Формы** и щелкните форму "Сведения" с типом **Основная**, чтобы открыть ее.
 
-**ВАЖНО**. По умолчанию всем формам задано имя "Сведения", поэтому обязательно проверьте, что тип выбранной формы — **Основная**, а не какой-то другой. По умолчанию форма содержит два поля: "Имя" и "Владелец".
+<bpt id="p1">**</bpt>IMPORTANT:<ept id="p1">**</ept> Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept> and not something else. By default, the form has two fields: Name and Owner.
 
 5. В правой части экрана в разделе свойств выберите поле **Отображаемое имя** и присвойте ему новое значение **Основные сведения**.
 
@@ -84,19 +79,19 @@ Bellows College — образовательное учреждение, име
 
 7. Перетащите столбец **Код** в заголовок формы.
 
-Заголовок — это верхняя правая область формы. Возможно, вам придется свернуть панель свойств в правой части экрана, чтобы увидеть это поле в форме.
+The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
 8. Не снимая выделения с поля **Код**, установите флажок **Только для чтения** на панели «Свойства» в правой части экрана.
 
-9. Выберите поле **Владелец**. На панели свойств в поле **Метка** задайте значение **Узел**.
+9. Select <bpt id="p1">**</bpt>Owner<ept id="p1">**</ept> field. In the Properties panel, change the <bpt id="p1">**</bpt>Label<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Host<ept id="p2">**</ept>
 
 10. Нажмите **Сохранить** в правом верхнем углу и дождитесь завершения сохранения.
 
 11. Нажмите кнопку **Опубликовать** в правом верхнем углу и дождитесь завершения публикации.
 
-12. Если в новой вкладке или в новом окне браузера откроется представление редактирования, закройте его. В противном случае нажмите кнопку **Назад** в левом верхнем углу экрана. Теперь следует вернуться на вкладку форм для таблицы визитов.
+12. Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий.
 
-13. Используйте навигацию в верхнем левом углу (Таблицы > Визит > Формы). Выберите **Визиты**, чтобы вернуться на главный экран таблицы **Визит**.
+13. Сейчас для регистрации посетителей кампуса используются бумажные журналы.
 
 ### <a name="task-2-edit-active-visits-view"></a>Задача \#2. Изменение представления «Активные визиты»
 
@@ -114,7 +109,7 @@ Bellows College — образовательное учреждение, име
 
     4. **Планируемое окончание**
 
-3. Выберите столбец **Время создания** и нажмите **Удалить**. Поле **Время создания** будет удалено из представления.
+3. Информация собирается несогласованно, отсутствуют средства сбора и анализа данных о визитах по всему кампусу.
 
 4. Измените ширину отдельных столбцов, чтобы в них умещались данные.
 
@@ -138,13 +133,13 @@ Bellows College — образовательное учреждение, име
 
 5. Выберите поле **Планируемое начало**, затем в раскрывающемся списке выберите условие **Сегодня**.
 
-6. Щелкните **…** в строке **Состояние** и нажмите кнопку **Удалить**, чтобы удалить это условие фильтра.
+6. Click the <bpt id="p1">**</bpt>…<ept id="p1">**</ept> on the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> row and click <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> to delete that filter condition.
 
-7. Для сохранения условия нажмите **OK**. Теперь представление отфильтровано и будет отображать только записи, в которых дата начала запланирована на сегодня.
+7. Press <bpt id="p1">**</bpt>Ok<ept id="p1">**</ept> to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
 
 8. Добавьте в представление поля **Фактическое начало** и **Фактическое окончание**.
 
-**Примечание**. Поскольку фильтр по состоянию представления не работает, мы увидим все сегодняшние визиты, в том числе завершенные. Эти поля помогут отделить завершенные визиты от текущих.
+<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 1. Выберите команду **Сохранить**.
 
@@ -230,13 +225,13 @@ Bellows College — образовательное учреждение, име
 
 2. Создайте новый контакт.
 
-    1. Приложение должно открыться в представлении **Мои активные контакты**. Если это не так, в области навигации слева щелкните "Контакты".
+    1. The app should open to the <bpt id="p1">**</bpt>My Active Contacts<ept id="p1">**</ept> view. If it does not, select Contacts on the left-hand navigation.
 
     1. Выберите пункт **Создать** в верхнем меню.
 
     1. Укажите в поле **Имя** Александр, а в поле **Фамилия** — Демидов.
 
-    1. В поле **Email** укажите свой личный адрес электронной почты. Он будет использоваться в одном из следующих заданий для получения сообщений электронной почты.
+    1. Provide your personal email as <bpt id="p1">**</bpt>Email<ept id="p1">**</ept>. This will be used in a future lab where you will receive an email.
 
     1. Щелкните **Save & Close** (Сохранить и закрыть).
 
@@ -258,9 +253,9 @@ Bellows College — образовательное учреждение, име
 
         1. **Запланированное окончание**: выберите завтрашнее число и время окончания 15:30
 
-- Щелкните **Save & Close** (Сохранить и закрыть). В результате будет создан визит, и вы должны увидеть его в представлении активных визитов.
+- Click <bpt id="p1">**</bpt>Save &amp; Close<ept id="p1">**</ept>. This will create the Visit and you should be able to see it on the Active Visits View.
 
-- Перейдите к представлению **Сегодняшние визиты**. В этом представлении новый визит отображаться не должен, так как он запланирован на завтра.
+- Change view to <bpt id="p1">**</bpt>Today’s Visits<ept id="p1">**</ept>. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
 
 4. Вы можете добавить еще несколько тестовых записей.
 
@@ -268,7 +263,7 @@ Bellows College — образовательное учреждение, име
 
 ![](media/3-model-driven-app.png)
 
-Поздравляем! Вы создали и настроили несложное приложение на основе модели.
+Congratulations! You have created and configured your first model-driven app.
 
 ## <a name="challenges"></a>Сложности
 

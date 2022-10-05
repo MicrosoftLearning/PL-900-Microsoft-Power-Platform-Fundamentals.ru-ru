@@ -2,24 +2,19 @@
 lab:
   title: Лабораторная работа 0. Проверка лабораторной среды
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154399"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Лабораторная работа 0. Проверка лабораторной среды
 
 ## <a name="scenario"></a>Сценарий
 
-Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий. Сейчас для регистрации посетителей кампуса используются бумажные журналы. Информация собирается несогласованно, отсутствуют средства сбора и анализа данных о визитах по всему кампусу.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Администрация кампуса хотела бы модернизировать систему регистрации посетителей таким образом, чтобы допуск в здания контролировали сотрудники службы безопасности, а обитатели кампуса предварительно регистрировали все визиты и обязательно записывали их.
 
 В этом курсе обучения вы разработаете приложения и реализуете автоматические процедуры, позволяющие администрации и службе охраны Bellows College контролировать доступ в здания кампуса.
 
-В этом задании модуля 0 вы освоите пробную версию Power Platform с доступом к Центру администрирования Power Platform. Затем в центре администрирования вы создадите свою среду **Практическое занятие** и тем самым выполните основную часть задания.
+In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a <bpt id="p1">**</bpt>Practice<ept id="p1">**</ept> environment that you will perform the majority of your lab work in.
 
 ## <a name="exercise-1--setup"></a>Упражнение 1. Настройка
 
@@ -31,7 +26,7 @@ Bellows College — образовательное учреждение, име
 
 1. В текстовое поле с надписью **Введите свой адрес электронной почты**, расположенное под заголовком **Приступим к работе**, введите адрес электронной почты из учетных данных Microsoft 365 и нажмите кнопку **Далее**.
 
-1. Если появится сообщение, что у вас уже есть учетная запись Майкрософт, выберите **Войти**.
+1. If you see a prompt that you have an existing account with Microsoft. Select <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept>.
 
 1. Введите пароль, выданный авторизованным провайдером лабораторных услуг, и войдите в систему.
 
@@ -67,4 +62,4 @@ Bellows College — образовательное учреждение, име
 
 1. После этого созданная вами среда **Практика** должна появиться в списке сред.
 
-> Подготовка среды к работе может занять несколько минут. При необходимости обновите страницу.
+> Your environment may take a few minutes to provision. Refresh the page if needed.
