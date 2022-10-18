@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>Сценарий
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий. Сейчас для регистрации посетителей кампуса используются бумажные журналы. Информация собирается несогласованно, отсутствуют средства сбора и анализа данных о визитах по всему кампусу.
 
 Администрация кампуса хотела бы модернизировать систему регистрации посетителей таким образом, чтобы допуск в здания контролировали сотрудники службы безопасности, а обитатели кампуса предварительно регистрировали все визиты и обязательно записывали их.
 
@@ -31,11 +31,11 @@ Bellows College is an educational organization with multiple buildings on campus
 
 ## <a name="exercise-1-create-visit-notification-flow"></a>Упражнение 1. Создание потока уведомлений о визитах
 
-<bpt id="p1">**</bpt>Objective:<ept id="p1">**</ept> In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit when a visit is created.
+**Цель упражнения.** В этом упражнении вы создадите поток Power Automate, который реализует данное требование. Посетителю необходимо отправить электронное письмо с уникальным кодом, присвоенным визиту при создании.
 
 ### <a name="task-1-create-a-flow"></a>Задача \#1. Создание потока
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  Перейдите к <https://make.powerapps.com>. При необходимости повторной аутентификации нажмите **Войти** и следуйте указаниям на экране.
 
 2.  В правом верхнем углу экрана выберите свою среду **[ваши инициалы] практика** (если она еще не выбрана).
 
@@ -59,11 +59,11 @@ Bellows College is an educational organization with multiple buildings on campus
 
     3.  В поле **Область действия** выберите **Организация**.
 
-    4.  On the trigger step, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>. Rename this trigger <bpt id="p1">**</bpt>"When a visit is added"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+    4.  Для настройки шага триггера нажмите многоточие ( **...** ), затем **Переименовать**. Введите новое имя этого триггера **"При добавлении визита"** . Это позволит вам и другим редакторам потока понять назначение шага без изучения подробностей.
 
 ### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Задача \#2. Создание шага для получения строки посетителя
 
-1.  Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий.
+1.  Выберите **+ Новый шаг**. Этот шаг необходим для получения сведений о посетителях, включающих адрес электронной почты.
 
 2.  Найдите **Dataverse**.
 
@@ -71,16 +71,16 @@ Bellows College is an educational organization with multiple buildings on campus
 
 4.  В поле **Имя таблицы** введите **Контакты**.
 
-5.  Сейчас для регистрации посетителей кампуса используются бумажные журналы.
+5.  Выберите поле **Идентификатор строки**. Вы увидите, что откроется окно для выбора динамического содержимого или выражений.
 
-6.  Информация собирается несогласованно, отсутствуют средства сбора и анализа данных о визитах по всему кампусу.
+6.  В поле **Идентификатор строки** выберите **Посетитель (значение)** из списка динамического содержимого. На этом шаге вы ищете контактное лицо для строки с информацией о визите, при создании которой был активирован этот поток. Так как адрес электронной почты находится в таблице контактов, вам нужно получить эту информацию для отправки посетителю сообщения электронной почты.
 
-7.  On this action, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.
-        Rename this action <bpt id="p1">**</bpt>"Get the Visitor"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+7.  В определении этого действия нажмите многоточие ( **...** ), затем **Переименовать**.
+        Введите новое имя этого действия **«Выбрать посетителя»** . Это позволит вам и другим редакторам потока понять назначение шага без изучения подробностей.
 
 ### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Задача \#3. Создание шага для отправки посетителю электронного письма
 
-1.  Click <bpt id="p1">**</bpt>+ New step<ept id="p1">**</ept>. This is the step that will send an email to the visitor.
+1.  Нажмите кнопку **+ Новый шаг**. Это шаг предназначен для отправки посетителю электронного письма.
 
 2.  Выполните поиск слова *почта*, выберите соединитель **Office 365 Outlook** и действие **Отправить по электронной почте (V2)** .
 
@@ -97,7 +97,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 7.  В поле **Содержимое электронного письма** введите следующее:
 
->   Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy &amp; paste all text first and then add dynamic content in the correct places.
+>   Вместо полей, указанных в скобках, необходимо поместить динамическое содержимое. Рекомендуется сначала скопировать и вставить весь текст, затем добавить динамический контент в нужные места.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Dear {First Name},
@@ -110,15 +110,15 @@ Bellows College is an educational organization with multiple buildings on campus
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-8.  Highlight the <bpt id="p1">**</bpt>{First Name}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>First Name<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>Get the Visitor<ept id="p2">**</ept> step.
+8.  Выделите текст **{Имя}** . Замените его значением поля **Имя** с шага **Получить посетителя**.
 
-9.  Highlight the <bpt id="p1">**</bpt>{Scheduled Start}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled Start<ept id="p1">**</ept> field <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+9.  Выделите текст **{Запланированное начало}** . Поместите сюда поле **Запланированное начало** из шага **При добавлении визита**.
 
-10.  Highlight the <bpt id="p1">**</bpt>{Scheduled End}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled End<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+10.  Выделите текст **{Запланированное окончание}** . Замените его полем **Запланированное окончание** из шага **При добавлении визита**.
 
 11.  Выберите команду **Сохранить**.
 
-Leave this flow tab open for the next task. You flow should look approximately like the following:
+Оставьте эту вкладку потока открытой для следующей задачи. Ваш поток должен выглядеть примерно так:
 
 ![Пример шагов потока.](media/4-Flow.png)
 
@@ -132,7 +132,7 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 3.  Оставив эту вкладку браузера открытой, вернитесь к предыдущей вкладке с вашим потоком.
 
-4.  On the command bar, click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Manually<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Test<ept id="p2">**</ept>.
+4.  На панели команд щелкните **Тестировать**. Щелкните **Вручную**, а затем — **Тест**.
 
 5.  Перейдите на вкладку браузера с открытым приложением на основе модели. 
 
@@ -152,10 +152,10 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 8. Нажмите кнопку **Сохранить и закрыть**.
 
-9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
+9. Перейдите на вкладку браузера, где запущен тест потока. После короткой задержки вы увидите выполнение потока. Здесь вы сможете обнаружить проблемы, если они возникнут в потоке, или подтвердить его успешное выполнение.
 
-After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
+После короткой задержки вы увидите сообщение электронной почты в папке "Входящие", так как вы указали электронную почту Александра Демидова в качестве своей личной электронной почты. Обратите внимание, что письмо может оказаться в папке нежелательной почты.
 
 ## <a name="challenges"></a>Сложности
 
-- Play around with the formatting on the email. How can you make it more professional looking?
+- Форматирование сообщения электронной почты. Как ему придать более профессиональный вид?
