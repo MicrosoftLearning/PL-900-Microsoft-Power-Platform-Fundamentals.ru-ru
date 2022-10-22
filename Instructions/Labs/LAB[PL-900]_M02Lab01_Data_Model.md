@@ -8,13 +8,13 @@ lab:
 
 ## <a name="scenario"></a>Сценарий
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий. Сейчас для регистрации посетителей кампуса используются бумажные журналы. Информация собирается несогласованно, отсутствуют средства сбора и анализа данных о визитах по всему кампусу.
 
 Администрация кампуса хотела бы модернизировать систему регистрации посетителей таким образом, чтобы допуск в здания контролировали сотрудники службы безопасности, а обитатели кампуса предварительно регистрировали все визиты и обязательно записывали их.
 
 В этом курсе обучения вы разработаете приложения и реализуете автоматические процедуры, позволяющие администрации и службе охраны Bellows College контролировать доступ в здания кампуса.
 
-In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+В этом задании вы войдете в свою среду, создадите базу данных Microsoft Dataverse и разработаете решение для отслеживания вносимых изменений. Кроме того, вы создадите модель данных, пригодную для выполнения следующих функций:
 
 - R1 — отслеживание сведений о запланированных посещениях кампуса;
 
@@ -28,7 +28,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 Для подготовки учебных сред необходимо выполнить следующее:
 
-- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+- Описание метаданных (таблицы и связи) можно найти в [документе с описанием модели данных](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Чтобы открыть этот документ в новом окне, щелкните ссылку, удерживая нажатой клавишу CTRL, либо щелкните ссылку правой кнопкой мыши.
 - Создание таблицы визитов
 - импортировать данные таблицы «Визит» с помощью электронной таблицы Excel.
 
@@ -166,7 +166,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 В этой задаче вы импортируете данные о визитах из файла Excel.
 
-1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
+1. На вашем компьютере должен быть сохранен файл **Visits.xlsx**. Скачайте файл [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx), если он отсутствует.
 
 2. Если вы еще не выполнили вход, войдите в [https://make.powerapps.com](https://make.powerapps.com/).
 
@@ -180,7 +180,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 7. В появившемся меню нажмите кнопку **Отправить**.
 
-8. Bellows College — образовательное учреждение, имеющее на территории своего кампуса несколько зданий.
+8. Найдите и выберите файл **Visits.xlsx**, скачанный ранее. (Обратите внимание, что отправка файла может занять пару минут. Не беспокойтесь, если появится сообщение о наличии ошибок сопоставления, мы исправим их позже.)
 
 9. Щелкните **Сопоставить столбцы**. Обратите внимание, что может потребоваться прокрутить вправо, чтобы увидеть этот параметр.
 
@@ -203,7 +203,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 14. Для завершения импорта данных нажмите кнопку **Импорт** в правом верхнем углу.
 
-Сейчас для регистрации посетителей кампуса используются бумажные журналы.
+**Примечание**. Импорт данных в таблицу может занять несколько минут. Не беспокойтесь, если появится несколько ошибок, это нормально и не повлияет на остальную часть курса.
 
 15. Щелкните **X**, чтобы закрыть панель импорта данных.
 
