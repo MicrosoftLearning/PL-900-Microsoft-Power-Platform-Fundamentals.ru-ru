@@ -164,7 +164,7 @@ Bellows College — образовательное учреждение, име
 
 ### <a name="task-11-load-excel-file-to-onedrive"></a>Задача \#1.1. Загрузка файла Excel в OneDrive
 
-1. На вашем компьютере должен быть сохранен файл **Visits.xlsx**. Скачайте файл [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx), если он отсутствует.
+1. На виртуальной машине в расположении **C:/LabFiles** у вас должен быть файл **Visits.xlsx**. Скачайте файл [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx), если он отсутствует.
 
 2. Если вы еще не выполнили вход, войдите в [https://make.powerapps.com](https://make.powerapps.com/).
 
