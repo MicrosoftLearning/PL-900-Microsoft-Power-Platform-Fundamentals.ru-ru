@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Bonus Lab: создание приложения холста с помощью Copilot'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Bonus Lab: создание приложения холста с помощью Copilot
